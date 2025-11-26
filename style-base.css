@@ -1,0 +1,57 @@
+/* ==========================================
+   Reset & Base Styles
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #0066FF;
+    --dark-blue: #003D99;
+    --light-blue: #E6F0FF;
+    --accent-blue: #3399FF;
+    --pink: #FF6B9D;
+    --yellow: #FFE66D;
+    --text-dark: #1a1a1a;
+    --text-gray: #666666;
+    --bg-white: #FFFFFF;
+    --bg-light: #F8F9FA;
+    --bg-blue-gradient: linear-gradient(135deg, #0066FF 0%, #00CCFF 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.8;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: var(--bg-blue-gradient);
+    z-index: 10000;
+    transform-origin: left;
+}

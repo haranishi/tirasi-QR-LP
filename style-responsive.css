@@ -1,0 +1,827 @@
+/* ==========================================
+   Responsive Design - Desktop Layout for Mobile
+   パソコン版と同じレイアウトをスマホでも表示
+   ========================================== */
+
+/* ========== Tablet (1024px以下) ========== */
+
+@media (max-width: 1024px) {
+    /* 基本的にデスクトップ版のレイアウトを維持 */
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Hero Section - デスクトップ版維持 */
+    .hero-split {
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+    }
+    
+    .hero-left {
+        padding: 60px 30px;
+    }
+    
+    .hero-right {
+        display: flex;
+        padding: 60px 30px;
+    }
+    
+    .hero-heading {
+        font-size: 48px;
+    }
+    
+    .hero-description {
+        font-size: 15px;
+    }
+    
+    /* Introduction - 左右分割維持 */
+    .intro-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    
+    .intro-main-title {
+        font-size: 42px;
+    }
+    
+    .intro-image-wrapper {
+        height: 400px;
+    }
+    
+    /* Points - 3列維持 */
+    .points-showcase {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    /* Jobs - 2列維持 */
+    .jobs-grid-modern {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    /* Voices - 2列維持 */
+    .voices-magazine-grid {
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+    }
+    
+    .voice-card-large {
+        grid-row: span 2;
+    }
+    
+    /* Timeline - 3列維持 */
+    .timeline-event {
+        grid-template-columns: 1fr auto 1fr;
+        gap: 30px;
+    }
+    
+    .timeline-track {
+        display: block;
+    }
+    
+    .timeline-event:nth-child(even) .timeline-card {
+        grid-column: 3;
+    }
+}
+
+/* ========== Small Tablet / Large Phone (768px以下) ========== */
+
+@media (max-width: 768px) {
+    /* より小さい画面でもデスクトップレイアウト維持 */
+    
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    /* フォントサイズを少し調整（読みやすさのため） */
+    body {
+        font-size: 13px;
+    }
+    
+    /* Hero Section */
+    .hero-split {
+        grid-template-columns: 1fr 1fr;
+        min-height: 80vh;
+    }
+    
+    .hero-left {
+        padding: 40px 15px;
+    }
+    
+    .hero-right {
+        padding: 40px 15px;
+    }
+    
+    .hero-heading {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    
+    .hero-description {
+        font-size: 12px;
+    }
+    
+    .hero-stats {
+        gap: 15px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    .stat-label {
+        font-size: 11px;
+    }
+    
+    .hero-img {
+        max-height: 200px;
+        border-radius: 12px;
+    }
+    
+    /* Introduction */
+    .intro-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .intro-shape {
+        padding: 25px 15px;
+        border-radius: 25px;
+    }
+    
+    .intro-main-title {
+        font-size: 26px;
+    }
+    
+    .intro-main-text {
+        font-size: 11px;
+    }
+    
+    .intro-image-wrapper {
+        height: 250px;
+    }
+    
+    .isometric-main-image {
+        max-width: 100%;
+    }
+    
+    /* Points - 3列維持 */
+    .points-showcase {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .point-card-header,
+    .point-card-body {
+        padding: 15px 10px;
+    }
+    
+    .point-badge {
+        font-size: 9px;
+        padding: 4px 10px;
+    }
+    
+    .point-icon-large {
+        font-size: 35px;
+    }
+    
+    .point-title-modern {
+        font-size: 13px;
+    }
+    
+    .point-description-modern {
+        font-size: 10px;
+    }
+    
+    .feature-tag {
+        font-size: 9px;
+        padding: 3px 8px;
+    }
+    
+    /* Section Title */
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    /* Recruitment - 2列維持 */
+    .jobs-grid-modern {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .job-card-large {
+        padding: 20px 15px;
+    }
+    
+    .job-number {
+        font-size: 50px;
+    }
+    
+    .job-icon-modern {
+        font-size: 35px;
+    }
+    
+    .job-title-modern {
+        font-size: 18px;
+    }
+    
+    .job-description-modern {
+        font-size: 11px;
+    }
+    
+    .job-button {
+        font-size: 11px;
+        padding: 10px 20px;
+    }
+    
+    /* Accordion */
+    .accordion-header {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .accordion-icon {
+        font-size: 20px;
+        min-width: 25px;
+    }
+    
+    .accordion-header h4 {
+        font-size: 13px;
+    }
+    
+    .accordion-content {
+        padding: 0 15px 15px 45px;
+        font-size: 11px;
+    }
+    
+    /* Voices - 2列維持 */
+    .voices-magazine-grid {
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+    
+    .voice-card-magazine {
+        padding: 20px 12px;
+    }
+    
+    .voice-card-large {
+        grid-row: span 2;
+    }
+    
+    .voice-quote-mark {
+        font-size: 60px;
+    }
+    
+    .voice-text-magazine {
+        font-size: 12px;
+    }
+    
+    .voice-avatar-magazine {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .voice-name-magazine {
+        font-size: 11px;
+    }
+    
+    .voice-profile-magazine {
+        font-size: 10px;
+    }
+    
+    /* Timeline - 3列維持 */
+    .timeline-event {
+        grid-template-columns: 1fr auto 1fr;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .timeline-track {
+        display: block;
+    }
+    
+    .timeline-marker {
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 0 6px var(--light-blue);
+    }
+    
+    .timeline-icon {
+        font-size: 18px;
+    }
+    
+    .timeline-card {
+        padding: 12px;
+    }
+    
+    .timeline-time-visual {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    
+    .timeline-card h4 {
+        font-size: 13px;
+    }
+    
+    .timeline-card p {
+        font-size: 10px;
+    }
+    
+    .timeline-event:nth-child(even) .timeline-card {
+        grid-column: 3;
+    }
+    
+    /* Apply */
+    .apply-button-large {
+        font-size: 14px;
+        padding: 18px 30px;
+    }
+    
+    .apply-text-large {
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .footer-title {
+        font-size: 20px;
+    }
+    
+    .footer-text {
+        font-size: 12px;
+    }
+    
+    .social-link {
+        font-size: 11px;
+        padding: 8px 15px;
+    }
+}
+
+/* ========== Mobile Phone (480px以下) ========== */
+
+@media (max-width: 480px) {
+    /* 極小画面でもデスクトップレイアウト維持 */
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    body {
+        font-size: 11px;
+    }
+    
+    /* Header */
+    .logo {
+        font-size: 16px;
+    }
+    
+    .header-title {
+        font-size: 10px;
+    }
+    
+    /* Hero - 横並び維持 */
+    .hero-split {
+        grid-template-columns: 1fr 1fr;
+        min-height: 60vh;
+    }
+    
+    .hero-left {
+        padding: 25px 10px;
+    }
+    
+    .hero-right {
+        padding: 25px 10px;
+    }
+    
+    .hero-label {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    
+    .hero-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-description {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .stat-number {
+        font-size: 24px;
+    }
+    
+    .stat-label {
+        font-size: 9px;
+    }
+    
+    .hero-img {
+        max-height: 120px;
+    }
+    
+    /* Introduction - 左右分割維持 */
+    .intro-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .intro-shape {
+        padding: 15px 10px;
+        border-radius: 20px;
+    }
+    
+    .intro-main-title {
+        font-size: 18px;
+    }
+    
+    .intro-main-text {
+        font-size: 9px;
+    }
+    
+    .intro-image-wrapper {
+        height: 180px;
+    }
+    
+    .intro-illustration {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .shape-1 {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .shape-2 {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .shape-3 {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Points - 3列維持 */
+    .points-showcase {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .point-card-header,
+    .point-card-body {
+        padding: 10px 6px;
+    }
+    
+    .point-badge {
+        font-size: 7px;
+        padding: 3px 6px;
+        margin-bottom: 8px;
+    }
+    
+    .point-icon-large {
+        font-size: 25px;
+    }
+    
+    .point-title-modern {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+    
+    .point-description-modern {
+        font-size: 8px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+    
+    .feature-tag {
+        font-size: 7px;
+        padding: 2px 6px;
+    }
+    
+    /* Recruitment - 2列維持 */
+    .jobs-grid-modern {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .job-card-large {
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+    
+    .job-number {
+        font-size: 35px;
+        top: 5px;
+        right: 5px;
+    }
+    
+    .job-badge-modern {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+    
+    .job-icon-modern {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .job-title-modern {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .job-description-modern {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    .job-button {
+        font-size: 9px;
+        padding: 8px 15px;
+    }
+    
+    /* Accordion */
+    .accordion-header {
+        padding: 12px;
+    }
+    
+    .accordion-icon {
+        font-size: 16px;
+    }
+    
+    .accordion-header h4 {
+        font-size: 11px;
+    }
+    
+    .accordion-content {
+        padding: 0 12px 12px 35px;
+        font-size: 9px;
+    }
+    
+    /* Voices - 2列維持 */
+    .voices-magazine-grid {
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+    
+    .voice-card-magazine {
+        padding: 12px 8px;
+        border-radius: 15px;
+    }
+    
+    .voice-card-large {
+        grid-row: span 2;
+    }
+    
+    .voice-quote-mark {
+        font-size: 40px;
+    }
+    
+    .voice-text-magazine {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    .voice-avatar-magazine {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .voice-name-magazine {
+        font-size: 9px;
+    }
+    
+    .voice-profile-magazine {
+        font-size: 8px;
+    }
+    
+    /* Timeline - 3列維持 */
+    .timeline-event {
+        grid-template-columns: 1fr auto 1fr;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-marker {
+        width: 35px;
+        height: 35px;
+        border: 2px solid var(--primary-blue);
+        box-shadow: 0 0 0 4px var(--light-blue);
+    }
+    
+    .timeline-icon {
+        font-size: 14px;
+    }
+    
+    .timeline-card {
+        padding: 8px;
+    }
+    
+    .timeline-time-visual {
+        font-size: 8px;
+        padding: 3px 8px;
+    }
+    
+    .timeline-card h4 {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .timeline-card p {
+        font-size: 8px;
+    }
+    
+    /* Apply */
+    .apply-button-large {
+        font-size: 11px;
+        padding: 15px 25px;
+    }
+    
+    .button-icon {
+        font-size: 16px;
+    }
+    
+    .apply-text-large {
+        font-size: 11px;
+    }
+    
+    /* Footer */
+    .footer-title {
+        font-size: 16px;
+    }
+    
+    .footer-text {
+        font-size: 10px;
+    }
+    
+    .social-link {
+        font-size: 9px;
+        padding: 6px 12px;
+    }
+}
+
+/* ========== 320px以下 ========== */
+
+@media (max-width: 320px) {
+    /* 最小画面でもレイアウト維持 */
+    
+    body {
+        font-size: 10px;
+    }
+    
+    .hero-heading {
+        font-size: 16px;
+    }
+    
+    .intro-main-title {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 14px;
+    }
+    
+    .point-icon-large {
+        font-size: 20px;
+    }
+    
+    .point-title-modern {
+        font-size: 9px;
+    }
+}
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-contact {
+        padding: 30px 20px;
+    }
+    
+    .contact-link {
+        font-size: 16px;
+        word-break: break-all;
+    }
+}
+/* ==========================================
+   レスポンシブ対応 - 追加部分
+   ========================================== */
+
+/* タブレット用 */
+@media (max-width: 1024px) {
+    .jobs-grid-modern {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .jobs-grid-modern .job-card-large:only-child {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* モバイル用 */
+@media (max-width: 768px) {
+    .jobs-grid-modern {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .jobs-grid-modern .job-card-large:only-child {
+        max-width: 100%;
+        padding: 40px 30px;
+    }
+
+    .job-card-large {
+        padding: 40px 30px;
+    }
+
+    .job-number {
+        font-size: 80px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .job-title-modern {
+        font-size: 24px;
+    }
+
+    .job-description-modern {
+        font-size: 14px;
+    }
+
+    /* フッターコンタクト - モバイル対応 */
+    .footer-contact {
+        padding: 30px 20px;
+        margin: 30px 0;
+    }
+
+    .footer-contact h4 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 20px;
+    }
+
+    .contact-link {
+        font-size: 16px;
+        word-break: break-all;
+    }
+
+    .contact-label {
+        font-size: 13px;
+    }
+
+    .contact-note {
+        font-size: 12px;
+    }
+}
+
+/* 小型モバイル用 */
+@media (max-width: 480px) {
+    .job-card-large {
+        padding: 30px 20px;
+    }
+
+    .job-title-modern {
+        font-size: 22px;
+    }
+
+    .job-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        padding: 24px 16px;
+    }
+
+    .contact-link {
+        font-size: 15px;
+    }
+}
+

@@ -1,13 +1,447 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>テスト</title>
+    <title>秋田県立大CSPコラボインターンシップ 1dayお仕事体験</title>
+
+    <!-- CSSファイルを分割して読み込む -->
+    <link rel="stylesheet" href="style-base.css">
+    <link rel="stylesheet" href="style-components.css">
+    <link rel="stylesheet" href="style-sections.css">
+    <link rel="stylesheet" href="style-animations.css">
+    <link rel="stylesheet" href="style-responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>こんにちは、世界！</h1>
-    <p>これはテストページです。</p>
-    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-animation">秋田県立大CSPコラボインターンシップ 1dayお仕事体験</div>
+            <div class="loading-spinner">
+                <div class="spinner-circle"></div>
+                <div class="spinner-circle"></div>
+                <div class="spinner-circle"></div>
+            </div>
+            <p class="loading-text">Loading<span class="dots"></span></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">秋田県立大CSPコラボインターンシップ 1dayお仕事体験</div>
+            <div class="header-title">Internship 2025</div>
+        </div>
+    </header>
+
+    <!-- Hero Section - フルスクリーンスプリット -->
+    <section class="hero hero-split">
+        <div class="hero-left">
+            <div class="hero-content-wrapper">
+                <p class="hero-label"> INTERNSHIP 2025</p>
+                <h1 class="hero-heading">
+                    自分の可能性、<br>
+                    <span class="highlight">発見。</span>
+                </h1>
+                <p class="hero-description">
+                    秋田基準寝具のインターンシップは、リアルな現場体験を通して、<br>
+                    新しい自分を発見するプログラムです。
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="102">0</div>
+                        <div class="stat-label">創業年数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">日間</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1">0</div>
+                        <div class="stat-label">職種</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-image-wrapper float-animation">
+                <img src="hero.png" alt="インターンシップの様子" class="hero-img">
+                <div class="image-decoration decoration-1"></div>
+                <div class="image-decoration decoration-2"></div>
+                <div class="image-decoration decoration-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction - TDK Style Minimal -->
+    <section class="introduction-tdk">
+        <div class="intro-container">
+            <div class="intro-left">
+                <div class="intro-shape">
+                    <div class="intro-content-block">
+                        <h2 class="intro-main-title">秋田基準寝具を<br>知る</h2>
+                        <p class="intro-main-text">
+                            秋田基準寝具の事業内容から強み、技術力、実績までをわかりやすく紹介。ぜひ参加して、企業理解を深めてください。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="intro-illustration intro-illustration-1">
+                    <div class="illustration-shape shape-1"></div>
+                    <div class="illustration-shape shape-2"></div>
+                    <div class="illustration-shape shape-3"></div>
+                </div>
+            </div>
+
+            <div class="intro-right">
+                <div class="intro-image-wrapper">
+                    <div class="intro-large-image">
+                        <div class="isometric-container">
+                            <img src="akita.png" alt="イソメトリック建物" class="isometric-main-image">
+                            <div class="isometric-decoration deco-1"></div>
+                            <div class="isometric-decoration deco-2"></div>
+                            <div class="isometric-decoration deco-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Points Section - カルーセル風 -->
+    <section class="points points-carousel">
+        <div class="container">
+            <h2 class="section-title">秋田基準寝具の<br>インターンシップのポイント</h2>
+
+            <div class="points-showcase">
+                <div class="point-card-modern" data-aos="fade-up">
+                    <div class="point-card-header"
+                        style="background: linear-gradient(135deg, #0066FF 0%, #00CCFF 100%);">
+                        <div class="point-badge">POINT 1</div>
+                        <div class="point-icon-large">🎯</div>
+                    </div>
+                    <div class="point-card-body">
+                        <h3 class="point-title-modern">入社理由No.1も「社風」を体感できるプログラム</h3>
+                        <p class="point-description-modern">
+                            社員との交流や職場見学を通じて実際に働く職場のイメージを持っていただけます
+                        </p>
+                        <div class="point-features">
+                            <span class="feature-tag">✓ 現場体験</span>
+                            <span class="feature-tag">✓ 実践的</span>
+                            <span class="feature-tag">✓ やりがい</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="point-card-modern" data-aos="fade-up" data-aos-delay="100">
+                    <div class="point-card-header"
+                        style="background: linear-gradient(135deg, #FF6B9D 0%, #FFA06B 100%);">
+                        <div class="point-badge">POINT 2</div>
+                        <div class="point-icon-large">🚀</div>
+                    </div>
+                    <div class="point-card-body">
+                        <h3 class="point-title-modern">採用担当者が解説！就活アドバイス講座</h3>
+                        <p class="point-description-modern">
+                            実際に提出された履歴書を参考に履歴書作成のポイントなどを分かりやすく解説します
+                        </p>
+                        <div class="point-features">
+                            <span class="feature-tag">✓ 交流</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="point-card-modern" data-aos="fade-up" data-aos-delay="200">
+                    <div class="point-card-header"
+                        style="background: linear-gradient(135deg, #FFE66D 0%, #FF6B9D 100%);">
+                        <div class="point-badge">POINT 3</div>
+                        <div class="point-icon-large">⭐</div>
+                    </div>
+                    <div class="point-card-body">
+                        <h3 class="point-title-modern">インターンシップ参加者1人1人にフィードバックシートをプレゼント</h3>
+                        <p class="point-description-modern">
+                            後日、フィードバックシートにまとめて参加者の強みを秋田基準寝具で活かせるかお答えします。
+                        </p>
+                        <div class="point-features">
+                            <span class="feature-tag">✓ 個別評価</span>
+                            <span class="feature-tag">✓ キャリア支援</span>
+                            <span class="feature-tag">✓ 選考優遇</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recruitment recruitment-hero">
+        <div class="recruitment-overlay"></div>
+        <div class="container">
+            <h2 class="section-title section-title-light">体験できる職種</h2>
+            <p class="recruitment-subtitle-light">秋田基準寝具で実際に体験できる職種をご紹介します。</p>
+
+            <div class="jobs-grid-modern">
+                <div class="job-card-large" data-aos="fade-up">
+                    <div class="job-number">01</div>
+                    <div class="job-content-large">
+                        <span class="job-badge-modern">受付中</span>
+                        <div class="job-icon-modern">📈</div>
+                        <h3 class="job-title-modern">営業</h3>
+                        <p class="job-description-modern">
+                            秋田県内外の病院・ホテル・旅館などのお客様へのリネンサプライ営業を体験します。お客様との信頼関係を築きながら、最適なサービスを提供する営業の仕事を学べます。
+                        </p>
+                        <a href="#apply" class="job-button">詳しく見る →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Program Details - アコーディオン風 -->
+    <section class="program-details program-accordion">
+        <div class="container">
+            <h2 class="section-title">プログラム詳細</h2>
+            <div class="details-accordion">
+                <div class="accordion-item" data-aos="fade-up">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">👥</span>
+                        <h4>対象</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>全学部・全学科の大学生・大学院生,短大生,専門大生,高校生</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">📅</span>
+                        <h4>実施期間</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>2026年冬季（12月〜1月予定）</p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">👍</span>
+                        <h4>実施日時</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>12/20</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">⏱️</span>
+                        <h4>実施日数</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>1日間</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">📍</span>
+                        <h4>実施場所</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>秋田基準寝具株式会社 本社<br>（秋田市八橋字イサノ6-1）</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">👤</span>
+                        <h4>募集人数</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>各職種 若干名</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="accordion-header">
+                        <span class="accordion-icon">💰</span>
+                        <h4>報酬</h4>
+                        <span class="accordion-arrow">→</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>無給（交通費支給なし）</p>
+                    </div>
+                </div>
+            </div>
+            <p class="details-note-modern">※応募締切：前日まで可</p>
+        </div>
+    </section>
+
+
+
+    <!-- Schedule - ビジュアルタイムライン -->
+    <section class="schedule schedule-visual">
+        <div class="container">
+            <h2 class="section-title">1日の流れ</h2>
+            <div class="timeline-visual">
+                <div class="timeline-track"></div>
+
+                <div class="timeline-event" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">🌅</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">10:00</div>
+                        <h4>オープニング・会社説明</h4>
+                        <p>秋田基準寝具の事業内容や100年以上の歴史、北日本随一の実績についてご紹介します。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event timeline-event-reverse" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">🏭</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">11:00</div>
+                        <h4>工場見学（本社工場）</h4>
+                        <p>最新設備を導入した本社工場を見学し、リネンサプライの現場を体感します。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">🍱</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">12:00</div>
+                        <h4>ランチ休憩</h4>
+                        <p>社員食堂で昼食をとりながら、リラックスした雰囲気で交流します。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event timeline-event-reverse" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">💼</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">13:00</div>
+                        <h4>営業ワーク</h4>
+                        <p>実践的な営業ワークに取り組み、営業の仕事を体験します。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">📚</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">14:30</div>
+                        <h4>就活アドバイス講座</h4>
+                        <p>就職活動に役立つアドバイスや面接のポイントなどをお伝えします。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event timeline-event-reverse" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">🎉</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">15:00</div>
+                        <h4>クロージング・懇親会</h4>
+                        <p>インターンシップのまとめと懇親会を行います。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-event" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <span class="timeline-icon">👋</span>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-time-visual">15:30</div>
+                        <h4>終了</h4>
+                        <p>1日のプログラムが終了となります。お疲れ様でした。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Apply Section - フルワイド -->
+    <section class="apply apply-fullwidth" id="apply">
+        <div class="apply-bg-pattern"></div>
+        <div class="container">
+            <div class="apply-content-centered">
+                <h2 class="section-title section-title-light">応募方法</h2>
+                <p class="apply-text-large">下記のエントリーフォームからご応募ください。</p>
+                <a href="https://job.mynavi.jp/27/pc/corpinfo/displaySeminar/index?optNo=TJsxDC&corpId=97235"
+                    class="apply-button-large ripple-effect">
+                    <span class="button-text">エントリーはこちら</span>
+                    <span class="button-icon">→</span>
+                </a>
+                <div class="apply-notes-modern">
+                    <p>※応募者多数の場合は、選考を行う場合があります。</p>
+                    <p>※プログラム内容は変更になる可能性があります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-title"></h3>
+            <p class="footer-text">インターンシップに関するご質問など、お気軽にお問い合わせください。</p>
+
+            <!-- 問い合わせ先セクション -->
+            <div class="footer-contact">
+                <h4>お問い合わせ先</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">📧 メール</span>
+                        <a href="mailto:soumu@akitakijunshingu.co.jp"
+                            class="contact-link">soumu@akitakijunshingu.co.jp</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">📞 電話</span>
+                        <a href="tel:018-862-4525" class="contact-link">018-862-4525</a>
+                        <p class="contact-note">（企画管理室宛でお願いいたします）</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h4>公式SNS</h4>
+                <p>秋田基準寝具の最新情報はSNSでチェック！</p>
+                <div class="social-links">
+                    <a href="https://akitakijunshingu.co.jp" target="_blank" class="social-link">🌐 公式HP</a>
+                    <a href="https://kocchake.com/pages/company?c=3625" target="_blank" class="social-link">📋 こっちゃけ</a>
+                    <a href="https://www.instagram.com/akitakijunshingu" class="social-link">📷 Instagram</a>
+                    <a href="#" class="social-link">▶️ YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Akita Kijun Shingu Corporation</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
